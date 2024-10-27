@@ -32,7 +32,6 @@ return {
           ".node_modules/",
           ".git/",
           ".next/",
-          ".lock",
         },
       },
     })

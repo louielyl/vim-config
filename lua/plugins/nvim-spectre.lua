@@ -1,5 +1,16 @@
 return {
   "nvim-pack/nvim-spectre",
   dependencies = "nvim-lua/plenary.nvim",
-  config=true
+  opts = {
+    replace_engine = {
+      ["sed"] = {
+        cmd = "sed",
+        args = {
+          "-i",
+          "",
+          "-E",
+        },
+      },
+    },
+  },
 }
